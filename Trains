@@ -1,0 +1,16 @@
+train_wagons = int(input())
+
+wagons = [0] * train_wagons
+
+command = input()
+while command != "End":
+    text = command.split(" ")
+    if text[0] == "add":
+        wagons[-1] += int(text[1])
+    elif text[0] == "insert":
+        wagons[int(text[1])] += int(text[2])
+    elif text[0] == "leave":
+        wagons[int(text[1])] -= int(text[2])
+
+    command = input()
+print(wagons)
