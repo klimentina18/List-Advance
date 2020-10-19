@@ -1,0 +1,19 @@
+list_one = input().split(", ")
+list_two = input()
+
+new_list = []
+
+for i in list_one:
+    if i in list_two:
+        new_list.append(i)
+
+print(new_list)
+
+
+
+#list_one = input().split(", ")
+#list_two = input()
+
+#new_list = [word for word in list_one if word in list_two]
+
+#print(new_list)
