@@ -1,0 +1,31 @@
+sum = int(input())
+sum_two = 0
+
+result_list = []
+i = 0
+while sum_two < sum:
+    i += 1
+    result = 2*i**2
+    sum_two += result
+    if sum_two > sum:
+        result -= sum_two - sum
+    result_list.append(result)
+
+print(result_list)
+
+
+#sum = int(input())
+#result_list = []
+#i = 1
+
+#while sum > 0:
+    #result = 2*i**2
+    #if sum < result:
+        #result_list.append(sum)
+    #else:
+        #result_list.append(result)
+    #sum -= result
+    #i += 1
+
+#print(result_list)
+
