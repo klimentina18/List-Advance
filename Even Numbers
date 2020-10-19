@@ -1,0 +1,25 @@
+nums = [int(i) for i in input().split(",")]
+even_nums = [index for index in range(len(nums)) if nums[index] % 2 ==0]
+print(even_nums
+
+
+#strings = list(map(int, input().split(", ")))
+
+#even_numbers = []
+
+#for i in range(len(strings)):
+    #if strings[i] % 2 == 0:
+        #even_numbers.append(i)
+
+#print(even_numbers)
+
+
+#strings = list(map(int, input().split(", ")))
+
+#even_numbers = []
+
+#for i in range(len(strings)):
+    #if strings[i] % 2 == 0:
+        #even_numbers.append(i)
+
+#print(even_numbers)
