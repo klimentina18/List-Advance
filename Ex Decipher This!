@@ -1,0 +1,11 @@
+code = input().split(" ")
+
+for word in code:
+    decipher = []
+    first_ascci = [ch for ch in word if ch.isdigit()]
+    first_ascci = chr(int("".join(first_ascci)))
+    decipher += first_ascci
+    second = [al for al in word if al.isalpha()]
+    decipher += second
+    decipher[1],decipher[-1] = decipher[-1],decipher[1]
+    print("".join(decipher),end= " ")
