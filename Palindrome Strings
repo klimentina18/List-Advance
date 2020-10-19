@@ -1,0 +1,25 @@
+words= input().split()
+word_two = input()
+
+palindroms = [word for word in words if word == word[::-1]]
+counter = palindroms.count(word_two)
+print(palindroms)
+print(f"Found palindrome {counter} times")
+
+
+#strings = input().split(" ")
+#palidrome = input()
+#is_palidrome = []
+#counter = 0
+
+#for el in strings:
+    #if str(el) == str(el)[::-1]:
+        #is_palidrome.append(el)
+#for element in is_palidrome:
+    #if element == palidrome:
+        #counter += 1
+#print(is_palidrome)
+#print(f"Found palindrome {counter} times")
+
+
+
